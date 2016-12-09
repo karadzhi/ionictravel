@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/font-awesome.min.css" />
+
+    <title>Home Page</title>
+<style>
+.gallery {
+	width: 100%;
+	height: auto;
+}
+
+.gallery li {
+	width: 33%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+.transform {
+	-webkit-transition: all .25s cubic-bezier(.2, .31, .36, 1);
+       -moz-transition: all .25s cubic-bezier(.2, .31, .36, 1);
+	     -o-transition: all .25s cubic-bezier(.2, .31, .36, 1);
+	        transition: all .25s cubic-bezier(.2, .31, .36, 1);
+}
+
+.gallery a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.gallery img {
+	position: relative;
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.gallery .info {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	background: white;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-transform: translateZ(0);
+   	        transform: translateZ(0);
+}
+
+.gallery .title {
+	font-weight: bold;
+	font-size: 20px;
+    color: rgb(43, 43, 43);
+    position: relative;
+    top: 45%;
+}
+</style>
+
+<style>
+.icon:hover {
+  color:blue;
+}
+</style>
+
+</head>
+
+<body>
+  <ion-content class="pane">
+    <div class="bar bar-header bar-dark" style="background-color: #F0F8FF;opacity:0.7;">
+        <h1 class="title" style="color:#2f2f2f;">Photo gallery</h1>
+        <a href="#" class="button button-clear" id="logout" style="color:#2f2f2f;">Logout</a>
+    </div>
+<!--content-->
+<!--div class="card has-header" style="text-align:center;margin-top:60px;padding:10px;">
+<img src="img/1.jpg">
+<img src="img/2.jpg">
+<img src="img/3.jpg">
+<img src="img/4.jpg">
+<img src="img/1.jpg">
+<img src="img/2.jpg">
+<img src="img/3.jpg">
+<img src="img/4.jpg">
+<img src="img/4.jpg">
+</div-->
+
+<div class="gallery" style="margin-top:100px;padding:20px">
+      <ul>
+        <li>
+          <a href="http://www.bridgeofsighs.info" title="Bridge of sighs">
+                <img src="img/venice2.jpg" alt="" />
+                <div class="info"><h1 class="title">Bridge of sighs</h1></div>
+            </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/San_Giorgio_Maggiore" title="San Giorgi Maggiore">
+              <img src="img/venice3.jpg" alt="" />
+                <div class="info"><h1 class="title">San Giorgi Maggiore</h1></div>
+            </a>
+        </li>
+        <li>
+          <a href="#" title="Gondoles (boat)">
+              <img src="img/venice4.jpg" alt="" />
+                <div class="info"><h1 class="title">Gondoles (boat)</h1></div>
+            </a>
+        </li>
+        <li>
+          <a href="#" title="Eiffel Tower">
+              <img src="img/venice5.jpg" alt="" />
+                 <div class="info"><h1 class="title"></h1></div>
+            </a>
+        </li>
+        <li>
+          <a href="https://www.britannica.com/topic/Grand-Canal-Venice-Italy" title="Grand Canal">
+              <img src="img/venice6.jpg" alt="" />
+                <div class="info"><h1 class="title">Grand Canal</h1></div>
+            </a>
+        </li>
+        <li>
+          <a href="http://www.cntraveller.com/recommended/cities/venice-architecture-biennale" title="Canal, Venice">
+              <img src="img/venice7.jpg" alt="" />
+                 <div class="info"><h1 class="title">Architecture</h1></div>
+            </a>
+        </li>
+        <li>
+          <a href="#" title="Eiffel Tower">
+              <img src="img/venice8.jpg" alt="" />
+                 <div class="info"><h1 class="title">Canal, Venice</h1></div>
+            </a>
+        </li>
+        <li>
+            <a href="#" title="Church">
+              <img src="img/venice9.jpg" alt="" />
+                 <div class="info"><h1 class="title">Church, Venice</h1></div>
+            </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Santa_Maria_Zobenigo" title="Eiffel Tower">
+              <img src="img/venice10.jpg" alt="" />
+                 <div class="info"><h1 class="title">Santa Maria Zobenigo</h1></div>
+            </a>
+        </li>
+
+
+
+      </ul>
+    </div><!-- .gallery -->
+
+<!-- menu navigation -->
+<div class="tabs tabs-icon-only">
+
+  <a href="home.html" class="tab-item">
+  <i class="icon ion-home"></i>
+</a>
+
+<a href="gallery.html" class="tab-item">
+  <i class="icon ion-images"></i>
+</a>
+<a href="music.html" class="tab-item">
+  <i class="icon ion-headphone"></i>
+</a>
+<a href="video.html" class="tab-item">
+  <i class="icon ion-social-youtube"></i>
+</a>
+
+<a href="map.html" class="tab-item">
+  <i class="icon ion-map"></i>
+</a>
+<a href="index.html" class="tab-item">
+  <i class="icon ion-gear-a"></i>
+</a>
+</div>
+
+  </ion-content>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+    <script>
+    //Direction aware image gallery effect
+//created by http://8bit-code.com
+//tutorial at http://www.8bit-code.com/tutorials/direction-aware-image-gallery-effect
+
+$(function () {
+  $(".gallery li").on("mouseenter mouseleave", function(e){
+
+/** the width and height of the current div **/
+var w = $(this).width();
+var h = $(this).height();
+
+/** calculate the x and y to get an angle to the center of the div from that x and y. **/
+/** gets the x value relative to the center of the DIV and "normalize" it **/
+var x = (e.pageX - this.offsetLeft - (w/2)) * ( w > h ? (h/w) : 1 );
+var y = (e.pageY - this.offsetTop  - (h/2)) * ( h > w ? (w/h) : 1 );
+
+/** the angle and the direction from where the mouse came in/went out clockwise (TRBL=0123);**/
+/** first calculate the angle of the point,
+ add 180 deg to get rid of the negative values
+ divide by 90 to get the quadrant
+ add 3 and do a modulo by 4  to shift the quadrants to a proper clockwise TRBL (top/right/bottom/left) **/
+var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180 ) / 90 ) + 3 )  % 4;
+
+
+
+/** check for direction **/
+switch(direction) {
+ case 0:
+  // direction top
+  var slideFrom = {"top":"-100%", "right":"0"};
+  var slideTo = {"top":0};
+
+  var imgSlide = "0, 60";
+ break;
+ case 1: //
+  // direction right
+  var slideFrom = {"top":"0", "right":"-100%"};
+  var slideTo = {"right":0};
+
+  var imgSlide = "-60, 0";
+ break;
+ case 2:
+  // direction bottom
+  var slideFrom = {"top":"100%", "right":"0"};
+  var slideTo = {"top":0};
+
+  var imgSlide = "0, -60";
+  break;
+ case 3:
+  // direction left
+  var slideFrom = {"top":"0", "right":"100%"};
+  var slideTo = {"right":0};
+
+  var imgSlide = "60, 0";
+ break;
+}
+
+
+
+    if( e.type === 'mouseenter' ) {
+
+      var element = $(this);
+
+      element.find(".info").removeClass("transform").css(slideFrom);
+      element.find("img").addClass("transform").css("transform","matrix(1, 0, 0, 1,"+imgSlide+")");
+
+      setTimeout(function(){
+        element.find(".info").addClass("transform").css(slideTo);
+      },1);
+
+
+    }else {
+
+      var element = $(this);
+
+      element.find(".info").addClass("transform").css(slideFrom);
+      element.find("img").removeClass("transform").css("transform","matrix(1, 0, 0, 1,"+imgSlide+")");
+
+      setTimeout(function(){
+        element.find("img").addClass("transform").css("transform","matrix(1, 0, 0, 1,0,0)");
+      },1);
+
+    }
+
+});
+
+});
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.pane {
+  background: url('../img/login_back.jpeg') no-repeat center center fixed;
+  /*background: url('../img/sky.jpg');*/
+  background-repeat: no-repeat;
+  background-size:cover;
+  ## Heading}
+
+  .padding {
+    margin-top:20px;
+    width: 90%;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+
+  .backplate {
+    background-color: #F0F8FF;
+    filter: alpha(opacity=60);
+    opacity:0.6;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 20px;
+  }

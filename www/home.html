@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/font-awesome.min.css" />
+    <title>Home Page</title>
+    <style>
+    .icon:hover {
+      color:blue;
+    }
+    </style>
+</head>
+
+<body class="BG">
+  <ion-content class="pane">
+
+    <div class="bar bar-header bar-dark" style="background-color: #F0F8FF;opacity:0.7;">
+        <h1 class="title" style="color:#2f2f2f;">Home</h1>
+        <a href="#" class="button button-clear" id="logout" style="color:#2f2f2f;">Logout</a>
+    </div>
+<!--content-->
+<ion-scroll zooming="true" direction="xy" style="width: 500px; height: 500px">
+  <div class="list card has-header" style="text-align:center">
+    <h2>Introduction</h2>
+    <p>We are students at Coventry university and we would like you to join in our Travel Guide mobile app.</p>
+
+  <div class="item item-image">
+    <img src="img/Logo_introduction.gif">
+
+
+        <div class="list">
+
+            <a class="item item-thumbnail-left" href="https://www.tripadvisor.co.uk">
+              <img src="img/tripadvisor.jpeg">
+              <h2>Trip advisor</h2>
+              <p>'Find and book your ideal hotel - and win big'</p>
+            </a>
+        </div>
+
+
+            <a class="item item-thumbnail-left" href="http://www.hostelbookers.com">
+              <img src="img/hostelbookers.jpg">
+              <h2>Hostel bookers</h2>
+              <p>'Hostels and cheap hotels.</p>
+              <p> Stay close to what you want to see and do.'</p>
+            </a>
+        </div>
+
+        <a class="item item-thumbnail-left" href="https://www.laterooms.com">
+          <img src="img/laterooms.png">
+          <h2>Late rooms</h2>
+          <p>'Over 200,000 hotels worldwide</p>
+          <p> No booking fees</p>
+          <p> Price promise'</p>
+        </a>
+    </div>
+
+    <a class="item item-thumbnail-left" href="http://www.trivago.co.uk">
+      <img src="img/triviago_logo.png">
+      <h2>Trivago</h2>
+      <p>'Find your ideal hotel</p>
+      <p> For the best price'</p>
+    </a> 
+</div>
+</ion-scroll>
+  </ion-content>
+
+      </div>
+    <div class="row lead">
+
+	</div>
+
+  </div>
+
+</div>
+<!-- menu navigation -->
+<div class="tabs tabs-icon-only">
+
+  <a href="home.html" class="tab-item">
+  <i class="icon ion-home"></i>
+</a>
+
+<a href="gallery.html" class="tab-item">
+  <i class="icon ion-images"></i>
+</a>
+<a href="music.html" class="tab-item">
+  <i class="icon ion-headphone"></i>
+</a>
+<a href="video.html" class="tab-item">
+  <i class="icon ion-social-youtube"></i>
+</a>
+<a href="map.html" class="tab-item">
+  <i class="icon ion-map"></i>
+</a>
+<a href="index.html" class="tab-item">
+  <i class="icon ion-gear-a"></i>
+</a>
+</div>
+
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+    <script type="text/javascript" src="js/star_rating.js"></script>
+</body>
+
+</html>

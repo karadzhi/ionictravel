@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/font-awesome.min.css" />
+    <title>Home Page</title>
+
+    <style>
+    .icon:hover {
+      color:red;
+    }
+    </style>
+
+</head>
+
+<body>
+  <ion-content class="pane">
+    <div class="bar bar-header bar-dark" style="background-color: #F0F8FF;opacity:0.7;">
+        <h1 class="title" style="color:#2f2f2f;">Video</h1>
+        <a href="#" class="button button-clear" id="logout" style="color:#2f2f2f;">Logout</a>
+    </div>
+    <div class="list card has-header" style="text-align:center">
+      <h2>Videos library</h2>
+      <p>Venice, Italy</p>
+    </div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/407OguH2klM" frameborder="0" allowfullscreen></iframe>
+
+</div>
+<div class="list card has-header" style="text-align:center">
+  <p>Manchester</p>
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rja1qjvdR_Q" frameborder="0" allowfullscreen></iframe>
+<!-- menu navigation -->
+<div class="tabs tabs-icon-only">
+
+  <a href="home.html" class="tab-item">
+  <i class="icon ion-home"></i>
+</a>
+
+<a href="gallery.html" class="tab-item">
+  <i class="icon ion-images"></i>
+</a>
+<a href="music.html" class="tab-item">
+  <i class="icon ion-headphone"></i>
+</a>
+<a href="video.html" class="tab-item">
+  <i class="icon ion-social-youtube"></i>
+</a>
+
+<a href="map.html" class="tab-item">
+  <i class="icon ion-map"></i>
+</a>
+<a href="index.html" class="tab-item">
+  <i class="icon ion-gear-a"></i>
+</a>
+</div>
+
+  </ion-content>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+</body>
+
+</html>
