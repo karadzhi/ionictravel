@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="lib/ionic/css/font-awesome.min.css">
+    <title>Home Page</title>
+    <script type="text/javascript">
+    var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/') + 1);
+    if (localStorage.login == "true" && filename == 'login.html') {
+        window.location.href = "index.html";
+    } else if (localStorage.login == null) {
+        window.location.href = "login.html";
+    } else if (localStorage.login == "false" && filename != 'login.html') {
+        window.location.href = "login.html";
+    }
+    </script>
+    <style>
+    .icon:hover {
+      color:blue;
+    }
+    </style>
+</head>
+
+<body>
+  <ion-content class="pane">
+    <div class="bar bar-header bar-dark" style="background-color: #F0F8FF;opacity:0.7;">
+      <h1 class="title" style="color:#2f2f2f;">Settings</h1>
+        <a href="#" class="button button-clear" id="logout" style="color:#2f2f2f;">Logout</a>
+    </div>
+    <div style="margin-top:44px;padding:20px;">
+
+    </div>
+
+
+    <ul class="list list-inset">
+        <li class="item" style="color:#D26F6F;">Email
+            <p class="item-note" id="email1"></p>
+        </li>
+        <a href="change-password.html" class="item item-icon-right">Change Password <i class="icon ion-ios-arrow-right"></i></a>
+    </ul>
+    <div>
+      <div style="margin-bottom:100px">
+    <div class="list card has-header" style="text-align:center">
+      <p>You can follow us on Twitter or check our Instagram page</p>
+      <a href="https://twitter.com/Travel_208_MC" class="twitter-follow-button" data-show-count="false">Follow @Travel_208_MC</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">
+      </script>
+    </div>
+<!--twitter content-->
+
+<div style="margin-left:45px">
+    <!-- LightWidget WIDGET -->
+  <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/885dc67196c857129511fc18539c1c5f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 90%; border: 0; overflow: hidden;">
+  </iframe>
+</div>
+</div>
+<!-- menu navigation -->
+<div class="tabs tabs-icon-only">
+
+  <a href="index.html" class="tab-item">
+  <i class="icon ion-home"></i>
+</a>
+
+<a href="gallery.html" class="tab-item">
+  <i class="icon ion-images"></i>
+</a>
+<a href="music.html" class="tab-item">
+  <i class="icon ion-headphone"></i>
+</a>
+<a href="video.html" class="tab-item">
+  <i class="icon ion-social-youtube"></i>
+</a>
+<a href="map.html" class="tab-item">
+  <i class="icon ion-map"></i>
+</a>
+<a href="settings.html" class="tab-item">
+  <i class="icon ion-gear-a"></i>
+</a>
+</div>
+
+  </ion-content>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+</body>
+
+</html>

@@ -24,3 +24,11 @@
     margin-bottom: auto;
     border-radius: 20px;
   }
+
+  .row {
+    background: url('../img/backgroundmenu.png') no-repeat center center fixed;
+    /*background: url('../img/sky.jpg');*/
+    background-repeat: no-repeat;
+    background-size:cover;
+    ## Heading}
+  }
